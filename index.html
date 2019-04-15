@@ -1,0 +1,23 @@
+<!doctype html>
+<!-- 도움되는 콘솔 경고를 포함한 개발 버전 -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="scripts/main.js"></script>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id="app">
+            {{ message }}
+        </div>
+        <script>
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    message: '안녕하세요 Vue!'
+                }
+            })
+        </script>
+    </body>
+    
+</html>
