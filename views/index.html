@@ -58,6 +58,9 @@
             <span>Drop files here</span>
         </div>
         <output id="list"></output>
+        <div id="convert_zone">
+            <span>convert</span>
+        </div>
     </div>
 
     <script>
@@ -125,6 +128,12 @@
         var dropZone = document.getElementById('drop_zone');
         dropZone.addEventListener('dragover', handleDragOver, false);
         dropZone.addEventListener('drop', handleFileSelect, false);
+        var convert = new Vue({
+            el: '#convert_zone',
+            data: {
+                message: '아래 창에 파일을 올려 놓아 주세요.'
+            }
+        })
 
     </script>
 </body>

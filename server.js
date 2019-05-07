@@ -15,3 +15,10 @@ var server = app.listen(port, function(){
 app.get('/', function(req, res){
     res.send('Hello world');
 })
+
+const extractAudio = require('ffmpeg-extract-audio')
+
+await extractAudio({
+  input: 'media/1.mp4',
+  output: 'test.wav'
+})

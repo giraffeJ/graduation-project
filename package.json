@@ -4,8 +4,10 @@
   "description": "-",
   "main": "server.js",
   "dependencies": {
+    "docker": "^1.0.0",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
+    "ffmpeg-extract-audio": "^1.0.2",
     "vue": "^2.6.10"
   },
   "devDependencies": {},
